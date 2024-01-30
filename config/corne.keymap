@@ -22,6 +22,15 @@
         };
     };
 
+    macros {
+        right_arrow: right_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GT>;
+            label = "RIGHT_ARROW";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -48,10 +57,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6    &kp NUMBER_7       &kp NUMBER_8   &kp N9            &kp N0             &kp BACKSLASH
-&kp TAB       &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6          &kp MINUS          &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp CAPSLOCK
-&kp LEFT_ALT  &kp F8        &kp F8        &kp F9        &kp F10       &kp F11         &kp F12         &kp DELETE         &kp COMMA      &kp PERIOD        &kp SLASH          &trans
-                                          &trans        &trans        &trans          &kp LEFT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_GUI
+&kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8       &kp N9            &kp N0             &kp GRAVE
+&kp LEFT_COMMAND  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6          &kp MINUS     &kp EQUAL          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
+&kp LEFT_ALT      &kp F8        &kp F8        &kp F9        &kp F10       &kp F11         &kp F12         &kp DELETE    &kp COMMA          &kp PERIOD        &kp SLASH          &kp CAPSLOCK
+                                              &trans        &trans        &trans          &kp LEFT_SHIFT  &right_arrow  &kp RIGHT_CONTROL
             >;
         };
 
