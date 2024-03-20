@@ -73,7 +73,7 @@
 
             bindings = <
 &kp LC(LG(Q))  &trans    &kp UP_ARROW  &trans     &kp PG_UP      &kp HOME      &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4  &bootloader
-&kp K_SLEEP    &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp END       &bt BT_NXT    &bt BT_PRV     &bt BT_CLR     &trans        &trans        &trans
+&kp K_SLEEP    &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp END       &bt BT_NXT    &bt BT_PRV     &trans         &trans        &bt BT_CLR    &trans
 &kp K_POWER    &trans    &trans        &trans     &trans         &kp INSERT    &trans        &trans         &trans         &trans        &trans        &trans
                                        &to 0      &trans         &kp LSHIFT    &kp SPACE     &kp RIGHT_ALT  &kp RIGHT_GUI
             >;
